@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Edwin Oziel">
+    <meta name="description" content="Sitio web personal responsivo sobre Fortnite utilizando Bootstrap 5">
+    <meta name="keywords" content="Fortnite, mapa, vuelos, ciudades, tours, bootstrap 5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    
+    <title>Actividad 6 - Sitio Web Personal con Bootstrap</title>
+    
+    <style>
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('imagenes/mapa.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 70vh;
+            color: white;
+        }
+        .destinos-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/mapa.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 40vh;
+            color: white;
+        }
+        .nav-bar-custom {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+        .nav-bar-custom a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .nav-bar-custom a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO Y HERO SECTION (Usando Flexbox de Bootstrap) -->
+    <header class="hero-section d-flex flex-column justify-content-between">
+        <div class="container text-center pt-5">
+            <h1 class="display-3 fw-bold text-uppercase">FORNITE</h1>
+            <p class="lead">Explora el mapa de Fornite</p>
+        </div>
+        
+        <nav class="nav-bar-custom container-fluid">
+            <div class="row text-center g-0">
+                <div class="col-4 border-end border-secondary">
+                    <a href="#Vuelos">Vuelos</a>
+                </div>
+                <div class="col-4 border-end border-secondary">
+                    <a href="#Ciudades">Ciudades</a>
+                </div>
+                <div class="col-4">
+                    <a href="#Tours">Tours</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Vuelos" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-light display-5">Las Vacaciones que Soñabas...</h2>
+        </div>
+        
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <figure class="figure m-0">
+                    <img src="imagenes/fornite.jpg" class="figure-img img-fluid rounded shadow" alt="Conoce Fortnite">
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque quae, id perferendis quo expedita temporibus iste a voluptates, quibusdam praesentium ullam voluptas labore minus, quisquam vel? Quis mollitia qui cum corrupti nesciunt earum eum in necessitatibus autem! Illum, iste mollitia quia, recusandae voluptate, nam repellat necessitatibus quo deleniti architecto odit possimus corrupti minus quos adipisci molestiae libero est vero dignissimos? Aperiam officiis iure similique consequuntur quis perspiciatis, quo, ab ipsa quibusdam incidunt assumenda rem fuga recusandae! In odit illum ullam fugit ratione iure voluptatem suscipit labore ducimus quod fuga, provident excepturi enim commodi, omnis ad reiciendis debitis ea nesciunt.
+                </p>
+            </div>
+        </div>
+
+        <article id="servicios" class="row text-center g-4 mt-4">
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light h-100 shadow-sm">
+                    <span class="fw-bold text-primary fs-5">HOME</span>
+                    <p class="text-muted small mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus, quod quasi, assumenda odit voluptates doloremque maiores atque soluta eius.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light h-100 shadow-sm">
+                    <span class="fw-bold text-primary fs-5">CIUDADES</span>
+                    <p class="text-muted small mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus, quod quasi, assumenda odit voluptates doloremque maiores atque soluta eius.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 border rounded bg-light h-100 shadow-sm">
+                    <span class="fw-bold text-primary fs-5">LOOT</span>
+                    <p class="text-muted small mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus, quod quasi, assumenda odit voluptates doloremque maiores atque soluta eius.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="Ciudades" class="destinos-section d-flex align-items-center justify-content-center text-center my-5">
+        <div class="container">
+            <h2 class="display-4 fw-bold text-white text-uppercase">Destinos</h2>
+        </div>
+    </section>
+
+    <section id="Tours" class="container py-5 mb-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Nacionales</h2>
+            <p class="text-muted mx-auto" style="max-width: 800px;">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rem facere atque est. Ullam, aut dicta delectus. Minima, ut accusamus quidem enim, dolorum illo voluptas iure incidunt a, accusantium reprehenderit ut praesentium numquam ipsa sunt.
+            </p>
+        </div>
+
+    
+        <div class="row g-3">
+            <div class="col-md-4 col-sm-6">
+                <img src="imagenes/campo calinge.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 200px; object-fit: cover;" alt="Destino 1">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="imagenes/ciudad comercio.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 200px; object-fit: cover;" alt="Destino 2">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="imagenes/pisos picados.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 200px; object-fit: cover;" alt="Destino 3">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="imagenes/mapa.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 200px; object-fit: cover;" alt="Destino 4">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="imagenes/fornite.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 200px; object-fit: cover;" alt="Destino 5">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="imagenes/ciudad comercio.jpg" class="img-fluid rounded shadow-sm w-100" style="height: 200px; object-fit: cover;" alt="Destino 6">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a href="#" class="text-white me-3 text-decoration-none">f</a>
+                    <a href="#" class="text-white me-3 text-decoration-none">𝕏</a>
+                    <a href="#" class="text-white text-decoration-none">in</a>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0 small text-secondary">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-1">Opción 1</p>
+                            <p class="mb-1">Opción 2</p>
+                            <p class="mb-1">Opción 3</p>
+                            <p class="mb-0">Opción 4</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-1">Opción 5</p>
+                            <p class="mb-1">Opción 6</p>
+                            <p class="mb-1">Opción 7</p>
+                            <p class="mb-0">Opción 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h4 class="fw-bold m-0">FORNITE</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
